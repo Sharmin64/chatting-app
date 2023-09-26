@@ -63,7 +63,7 @@ const StandardMessageForm = ({props, activeChat}) => {
         </div>
         <div className="message-form-icons">
           <Dropzone
-            acceptedFiles=".jpg, .jpeg, .png , .jfif"
+            acceptedFiles=".jpg, .jpeg, .png"
             multiple={false}
             noClick={true}
             onDrop={(acceptedFiles) => {
