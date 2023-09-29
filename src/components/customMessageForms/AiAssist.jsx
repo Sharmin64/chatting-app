@@ -48,7 +48,7 @@ const AiAssist = ({props, activeChat}) => {
       const form = {text: message};
       triggerAssist(form);
     }
-  }, [debouncedValue]);
+  }, [debouncedValue]); //eslint-disable-line
 
   const handleKeyDown = (e) => {
     if (e.keyCode === 9 || e.keyCode === 13) {
@@ -62,7 +62,7 @@ const AiAssist = ({props, activeChat}) => {
     if (resultAssist.data?.text) {
       setAppendText(resultAssist.data?.text);
     }
-  }, [resultAssist]);
+  }, [resultAssist]); //eslint-disable-line
 
   return (
     <MessageFormUi
